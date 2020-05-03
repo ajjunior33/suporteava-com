@@ -61,6 +61,6 @@ server.get("/comDetails", (req, res) => {
 });
 
 const porta = process.env.ANDRE || 3333;
-app.listen(porta, function () {
+server.listen(porta, function () {
   console.log(`Umbler listening on port  ${porta}`);
 });
