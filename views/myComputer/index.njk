@@ -1,0 +1,22 @@
+{% extends "template/padrao.html" %}
+
+{% block home %}
+    <div class="row" style="margin: 50px 10px; padding: 30px 0px;">
+        <div class='col-sm-6' style="margin:0 auto;">
+            <form method="get" action="comDetails">
+                <div class="form-group">
+                    <label for="usr">Identificação:</label>
+                    <input type="text" name="id" placeholder="35ghs" class="form-control" id="id">
+                </div>
+                <button class="btn btn-primary btn-sm" type="submit">
+                Pesquisar
+                </button>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block js %}
+    <script src="./js/myComputer/index.js"></script>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "template/padrao.html" %}
+
+{% block home %}
+    <div class="row">
+    <div class="col-sm-2">
+        <h3>Modelo</h3>
+        {{computerDetails.modelo}}
+    </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script src="./js/myComputer/index.js"></script>
+{% endblock %}
