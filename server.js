@@ -60,6 +60,10 @@ server.get("/comDetails", (req, res) => {
   });
 });
 
+server.get("/admin", (req, res) => {
+  return res.render("admin/index.njk");
+});
+
 const porta = process.env.ANDRE || 3333;
 server.listen(porta, function () {
   console.log(`Umbler listening on port  ${porta}`);
