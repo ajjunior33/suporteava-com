@@ -1,12 +1,37 @@
 .content{
-    width:50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    display: flex;
+    max-width:420px;
+    padding: 15px 30px ;
+    display:flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    background-color: #ecf0f1;
+
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    border-radius:5px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.42);
+}
+
+.form-access{
+    width:100%;
+}
+#rds{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+#rds i{
+    margin-left:5%;
+    font-size:18px;
+    color:#95a5a6;
+    transition: all .8s;
+}
+#rds i:hover{
+    color:#7f8c8d;
 }
